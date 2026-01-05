@@ -8,7 +8,7 @@ The project implements core cryptographic primitives and algorithms from first p
 - Modular arithmetic and number theory tools
 - Discrete logarithm solvers (naive, BSGS, Pohlig–Hellman)
 - Chinese Remainder Theorem
-- Diffie–Hellman key exchange (Coming Soon)
+- Diffie–Hellman key exchange
 - RSA key generation, encryption, and decryption (Coming Soon)
 - Primality testing (Fermat, Miller–Rabin) (Coming Soon)
 - Elliptic curve cryptography (toy curves) (Coming Soon)
