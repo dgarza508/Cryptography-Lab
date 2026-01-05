@@ -1,17 +1,17 @@
 # This one is purely for demonstration purposes
-def gcd_from_notes(a, b):
+def gcd_from_notes(a: int, b: int) -> int:
     if b == 0:
         return abs(a)
     return gcd(b, a % b)
 
 #USE THIS ONE! (found online and much faster)
-def gcd(a, b):
+def gcd(a: int, b: int) -> int:
     while b != 0:
         a, b = b, a % b
     return abs(a)
 
 
-def extended_gcd(a, b):
+def extended_gcd(a: int, b: int) -> int:
     
     #Returns (g, x, y) such that ax + by = g = gcd(a, b)
     

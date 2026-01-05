@@ -1,7 +1,7 @@
 from utils import gcd, extended_gcd
 
 
-def crt_two(a1, m1, a2, m2):
+def crt_two(a1: int, m1: int, a2: int, m2: int) -> int:
 
     """
     Solve:
@@ -17,7 +17,7 @@ def crt_two(a1, m1, a2, m2):
     return (a1 * t * m2 + a2 * s * m1) % (m1 * m2)
 
 
-def crt_many(congruences):
+def crt_many(congruences: int) -> int:
 
     
     #congruences = [(a1, m1), (a2, m2), ...]

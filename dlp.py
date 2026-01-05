@@ -3,7 +3,7 @@ from utils import gcd
 from crt import crt_many
 
 # Baby Step Giant Step Algorithm
-def bsgs(g, h, p):
+def bsgs(g: int, h: int, p: int) -> int:
     
     # Solve g^x ≡ h (mod p)
     
@@ -30,7 +30,7 @@ def bsgs(g, h, p):
     return None
 
 # Calls bsgs for the purpose of Pohlig-Hellman
-def bsgs_prime_power(g, h, p, q, e):
+def bsgs_prime_power(g: int, h: int, p: int, q: int, e: int) -> int:
     
     # Solve g^x = h mod p where order divides q^e
 
@@ -47,7 +47,7 @@ def bsgs_prime_power(g, h, p, q, e):
     return x
 
 
-def pohlig_hellman(g, h, p):
+def pohlig_hellman(g: int, h: int, p: int) -> int:
 
     # Solve g^x ≡ h (mod p) using Pohlig–Hellman    
 

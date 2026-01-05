@@ -2,22 +2,22 @@ from utils import gcd, extended_gcd
 
 # This file is mostly for demonstration purposes
 
-def mod_add(a, b, m):
+def mod_add(a: int, b: int, m: int) -> int:
     return (a + b) % m
 
 
-def mod_sub(a, b, m):
+def mod_sub(a: int, b: int, m: int) -> int:
     return (a - b) % m
 
 
-def mod_mul(a, b, m):
+def mod_mul(a: int, b: int, m: int) -> int:
     return (a * b) % m
 
 
-def mod_exp(base, exp, mod):
+def mod_exp(base: int, exp: int, mod: int):
+
     # Do NOT use next two! This is purely for demonstration.
     # We will use pow from import math for efficiency
-
     
     result = 1
     base %= mod
@@ -30,12 +30,13 @@ def mod_exp(base, exp, mod):
 
     return result
 
-def mod_inv(a, m):
-    """
-    Modular inverse using Extended Euclidean Algorithm
-    (demonstration)
-    """
-    g, x, _ = extended_gcd(a, m)
+def mod_inv(a: int, mod: int) -> int:
+    
+    # Do NOT use next two! This is purely for demonstration.
+    # For future, we will check gcd == 1, then 
+    # We will use pow from import math for efficiency
+    
+    g, x, _ = extended_gcd(a, mod)
     if g != 1:
         return None
-    return x % m
+    return x % mod
